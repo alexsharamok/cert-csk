@@ -1,0 +1,10 @@
+id: ad633177-bdec-4c09-9d34-5a79044d871a
+name: Article
+order: 600
+path: /articles/:article
+type: composition
+pathSegment: ':article'
+data:
+  previewValue: ''
+compositionId: a77309a2-d0d7-430f-8339-01fd6bb42707
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

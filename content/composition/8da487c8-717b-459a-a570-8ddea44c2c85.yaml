@@ -1,0 +1,202 @@
+composition:
+  _name: Blog
+  _id: 8da487c8-717b-459a-a570-8ddea44c2c85
+  _slug: blog
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Blog
+  slots:
+    pageFooter:
+      - _id: e317ac29-9a00-4809-9446-03857300e6de
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 5cf98015-c987-4607-9c88-5212da775187
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 67018d8f-91f6-4d02-98dc-21a1497c0e73
+        type: $personalization
+        slots:
+          pz:
+            - _id: a0901822-ed37-429f-af4e-01177b526378
+              type: hero
+              variant: backgroundImage
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 9151c3b1-b513-4375-aee4-c258ccb596be
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 653da1c7-a657-48f4-a013-f413fbc9e2a6
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/dVZdlCyHQOaqzJxd_NOL8w-foxie-edianiak-zS-ee-D4v2o-unsplash.jpg
+                          type: text
+                        file:
+                          type: file
+                          value: e5e93673-6cb4-41ec-9ad5-ad1f9644056e
+                        size:
+                          value: 1503791
+                          type: number
+                        title:
+                          type: text
+                          value: foxie-edianiak-zS-ee-D4v2o-unsplash.jpg
+                        width:
+                          value: 4608
+                          type: number
+                        height:
+                          value: 3072
+                          type: number
+                        mediaType:
+                          value: image/jpeg
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Hey, how is it going in Ukraine?
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: uaVisitor
+                        r: 0
+                        op: '>'
+                    name: ''
+                objectFit:
+                  type: select
+                  value: cover
+                textColor:
+                  type: tp-color-palette-parameter
+                  value: primary-content
+                paddingTop:
+                  type: select
+                  value: None
+                titleStyle:
+                  type: tp-title-style-parameter
+                  value: h2
+                description:
+                  type: text
+                  value: sorry for asking
+                eyebrowText:
+                  type: text
+                  value: eyebrow text
+                paddingBottom:
+                  type: select
+                  value: None
+                containerVariant:
+                  type: select
+                  value: fluidContent
+        parameters:
+          count:
+            type: number
+            value: '1'
+          trackingEventName:
+            type: text
+            value: blog hero
+      - _id: 99591893-ea19-4e56-8713-41e28d8bd6c7
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: a320e8cb-5497-44f1-b110-15a64282967a
+        type: grid
+        slots:
+          grid-inner:
+            - _id: 7dd492c3-e64a-4849-9feb-1809d71f5635
+              type: $loop
+              slots:
+                body:
+                  - _id: b426910c-4a17-4ec9-b10a-18ae7324e5a9
+                    type: card
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 4332ed6c-e3d5-4a47-b2d2-aa0f2c0137fc
+                            type: image
+                            fields:
+                              url:
+                                type: text
+                                value: >-
+                                  ${#jptr:/Blog Posts Content items Loop
+                                  Item/fields/featuredImage/fields/file/url}
+                            _source: custom-url
+                      title:
+                        type: text
+                        value: >-
+                          ${#jptr:/Blog Posts Content items Loop
+                          Item/fields/title}
+                      buttonCopy:
+                        type: text
+                        value: ...
+                      buttonLink:
+                        type: link
+                        value:
+                          path: >-
+                            /blog/${#jptr:/Blog Posts Content items Loop
+                            Item/fields/slug}
+                          type: projectMapNode
+                          nodeId: 92b704a7-156c-49a8-b302-76f7157b22f4
+                          projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                          dynamicInputValues:
+                            blogpost: >-
+                              ${#jptr:/Blog Posts Content items Loop
+                              Item/fields/slug}
+                      description:
+                        type: text
+                        value: >-
+                          ${#jptr:/Blog Posts Content items Loop
+                          Item/fields/shortDescription}
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: '5'
+              _dataResources:
+                Blog Posts Content items Loop Item:
+                  type: sys-reserved-loop
+                  variables:
+                    connectedData: '#jptr:/Blog Posts Content/items:fa=c'
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: medium
+          gapY:
+            type: tp-slider-parameter
+            value: medium
+          columnsCount:
+            type: tp-slider-parameter
+            value: '2'
+  _dataResources:
+    Blog Posts Content:
+      type: blogPosts
+      variables:
+        skip: ''
+        limit: '10'
+        order: '-sys.updatedAt'
+        locale: ''
+        filters: ''
+        keyword: ''
+        sortOrder: desc
+        searchValue: ''
+        sortFieldId: sys.updatedAt
+        contentTypeId: pageBlogPost
+        advancedFilters: '[]'
+        contentTypeQuery: content_type=pageBlogPost
+created: '2024-11-28T19:40:14.566012+00:00'
+modified: '2024-11-29T10:25:44.673293+00:00'
+pattern: false

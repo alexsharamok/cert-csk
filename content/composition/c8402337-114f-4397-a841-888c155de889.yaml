@@ -1,0 +1,166 @@
+composition:
+  _name: Articles
+  _id: c8402337-114f-4397-a841-888c155de889
+  _slug: articles
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: ${#jptr:/Content Block Content/fields/title}
+  slots:
+    pageFooter:
+      - _id: 2b026727-3323-4a59-8357-84298c310d6a
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: defefc07-46da-4c28-8271-76c5e8a843f7
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 1be59f6a-54cf-411c-b6ca-cd439be6d2a1
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 21a81034-1146-4f32-95ef-1a71d51fa89f
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: ${#jptr:/Content Block Content/fields/image}
+                _source: custom-url
+          title:
+            type: text
+            value: ${#jptr:/Content Block Content/fields/title}
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: tp-color-palette-parameter
+            value: primary-content
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h2
+          description:
+            type: text
+            value: Some page description
+          eyebrowText:
+            type: text
+            value: eyebrow text
+          paddingBottom:
+            type: select
+            value: None
+          containerVariant:
+            type: select
+            value: fluidContent
+      - _id: 1b694171-cb82-4ad9-946c-235cd736d1c7
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: 3b51b46e-3fe6-43c1-b0e2-9c8f2070ae36
+        type: grid
+        slots:
+          grid-inner:
+            - _id: 7a8c1735-4d1d-45c1-b33f-f00c73f74c06
+              type: $loop
+              slots:
+                body:
+                  - _id: d6c4a9ef-fae6-40a7-a61e-a358ceee987f
+                    type: card
+                    parameters:
+                      image:
+                        type: asset
+                        value:
+                          - _id: 2c07bb65-aed2-4f6f-98e3-d5671ff11136
+                            type: image
+                            fields:
+                              url:
+                                type: text
+                                value: >-
+                                  ${#jptr:/Articles Content items Loop
+                                  Item/fields/thumbnail/fields/file/url}
+                            _source: custom-url
+                      title:
+                        type: text
+                        value: >-
+                          ${#jptr:/Articles Content items Loop
+                          Item/fields/title}
+                      buttonCopy:
+                        type: text
+                        value: Read more
+                      buttonLink:
+                        type: link
+                        value:
+                          path: >-
+                            /articles/${#jptr:/Articles Content items Loop
+                            Item/fields/slug}
+                          type: projectMapNode
+                          nodeId: ad633177-bdec-4c09-9d34-5a79044d871a
+                          projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                          dynamicInputValues:
+                            article: >-
+                              ${#jptr:/Articles Content items Loop
+                              Item/fields/slug}
+                      description:
+                        type: text
+                        value: >-
+                          ${#jptr:/Articles Content items Loop
+                          Item/fields/description}
+                      lineCountRestriction:
+                        type: tp-slider-parameter
+                        value: '5'
+              _dataResources:
+                Articles Content items Loop Item:
+                  type: sys-reserved-loop
+                  variables:
+                    connectedData: '#jptr:/Articles Content/items:fa=c'
+        parameters:
+          gapX:
+            type: tp-slider-parameter
+            value: small
+          gapY:
+            type: tp-slider-parameter
+            value: small
+          columnsCount:
+            type: tp-slider-parameter
+            value: '3'
+  _dataResources:
+    Articles Content:
+      type: articles
+      variables:
+        skip: ''
+        limit: '25'
+        order: '-sys.createdAt'
+        locale: ''
+        filters: ''
+        keyword: ''
+        sortOrder: desc
+        searchValue: ''
+        sortFieldId: sys.createdAt
+        contentTypeId: article
+        advancedFilters: '[]'
+        contentTypeQuery: content_type=article
+    Content Block Content:
+      type: contentBlock
+      variables:
+        locale: ''
+        entryIds: 1FFRNkOEMgpMWBtREbYCaa
+created: '2024-11-21T14:05:33.167777+00:00'
+modified: '2024-11-21T15:37:57.822162+00:00'
+pattern: false

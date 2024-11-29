@@ -8,7 +8,6 @@ parameters:
   - id: title
     name: Title
     type: text
-    helpText: ''
     typeConfig:
       required: false
     localizable: true
@@ -26,5 +25,5 @@ slots:
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2024-01-15T12:18:49.938908+00:00'
-updated: '2024-01-15T12:18:49.938908+00:00'
+created: '2024-11-19T16:34:34.735876+00:00'
+updated: '2024-11-19T16:34:34.735876+00:00'

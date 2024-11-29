@@ -1,0 +1,77 @@
+composition:
+  _name: Blog Hero Pattern - Contentful
+  _id: 4700eaad-2681-4bd2-8e86-5e8c09860296
+  type: hero
+  variant: backgroundImage
+  parameters:
+    image:
+      type: asset
+      value:
+        - _id: 4d3a23ad-d437-4924-bee4-001a7954dc5a
+          type: image
+          fields:
+            url:
+              type: text
+              value: ${#jptr:/Blog Post Content/fields/featuredImage/fields/file/url}
+            description:
+              type: text
+              value: ''
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Blog Post Content/fields/title}
+    textColor:
+      type: tp-color-palette-parameter
+      value: secondary-content
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h2
+    description:
+      type: text
+      value: ${#jptr:/Blog Post Content/fields/shortDescription}
+  _dataResources:
+    Blog Post Content:
+      type: blogPost
+      variables:
+        locale: ''
+        entryIds: 4YpnxRJ6o0uhD0pxY7hHRF
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    variants: true
+    parameters:
+      $viz: 'yes'
+      delay: 'yes'
+      image: 'no'
+      title: 'no'
+      video: 'yes'
+      duration: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      textColor: 'yes'
+      fullHeight: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      description: 'no'
+      eyebrowText: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      animationType: 'yes'
+      paddingBottom: 'yes'
+      animationOrder: 'yes'
+      overlayOpacity: 'yes'
+      backgroundColor: 'yes'
+      animationPreview: 'yes'
+      containerVariant: 'yes'
+      primaryButtonCopy: 'yes'
+      primaryButtonLink: 'yes'
+      primaryButtonStyle: 'yes'
+      secondaryButtonCopy: 'yes'
+      secondaryButtonLink: 'yes'
+      secondaryButtonStyle: 'yes'
+      primaryButtonAnimationType: 'yes'
+      secondaryButtonAnimationType: 'yes'
+    hideLockedParameters: true
+created: '2024-11-28T19:06:07.376746+00:00'
+modified: '2024-11-28T19:10:03.170098+00:00'
+pattern: true

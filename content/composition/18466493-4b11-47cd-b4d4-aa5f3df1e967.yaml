@@ -1,0 +1,95 @@
+composition:
+  _name: Blog Post
+  _id: 18466493-4b11-47cd-b4d4-aa5f3df1e967
+  _slug: the-rise-of-robots-how-advanced-technology-is-changing-copy
+  type: blogPage
+  parameters:
+    pageTitle:
+      type: text
+      value: ${blogpost}
+  slots:
+    pageFooter:
+      - _id: 9084fa37-cc79-4ddf-b83a-d5e10679f8a5
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: a5b3b8ac-54cb-4c91-8891-ab9b17f9d201
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: a78102cd-2068-41ce-82c3-8fb6595993b8
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 29e7c1d6-0815-47f9-ad52-47d654e99b9a
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: >-
+                      ${#jptr:/Blog by Slug
+                      Content/items/0/fields/featuredImage/fields/file/url}
+                _source: custom-url
+          title:
+            type: text
+            value: ${#jptr:/Blog by Slug Content/items/0/fields/title}
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h2
+          description:
+            type: text
+            value: ${#jptr:/Blog by Slug Content/items/0/fields/shortDescription}
+      - _id: e7349a48-2001-4ad0-8ab2-7ab54ce8617d
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+      - _id: 2ae3c44e-b7fa-4a77-a975-abe919871c0d
+        type: content
+        parameters:
+          text:
+            type: text
+            value: >+
+              ${#jptr:/Blog by Slug
+              Content/items/0/fields/content/content/0/content/0/value}
+
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+      - _id: f3c2c388-fc04-4bcb-838b-d3c43a599106
+        type: content
+        parameters:
+          title:
+            type: text
+            value: >-
+              ${#jptr:/Blog by Slug
+              Content/items/0/fields/content/content/1/data/target/fields/caption}
+          content:
+            type: json
+            value: >-
+              ${#jptr:/Blog by Slug
+              Content/items/0/fields/content/content/2/content/0/value}
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h4
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: ${blogpost}
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+created: '2024-11-28T19:16:24.62782+00:00'
+modified: '2024-11-28T19:37:50.111246+00:00'
+pattern: false

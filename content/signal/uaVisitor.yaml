@@ -1,0 +1,22 @@
+id: uaVisitor
+name: UA visitor
+cap: 100
+crit:
+  op: '|'
+  type: G
+  clauses:
+    - key: vc-country
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: ua
+    - type: QS
+      match:
+        cs: false
+        op: '='
+        rhs: ua
+      queryName: country
+dur: p
+description: ''
+str: 50

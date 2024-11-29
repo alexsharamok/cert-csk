@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 30acda77-746d-486b-bd85-60d07b9fa0d2
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: JD-commerce-logo_j4hx60_am3ukx.svg
+    file:
+      type: file
+      value: 36e4a106-f616-48ac-b00a-e6fdbdfb837d
+    mediaType:
+      value: image/svg+xml
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/I6zVvieuRfS_yNjg5g9Q5g-JD-commerce-logo_j4hx60_am3ukx.svg
+      type: text
+    size:
+      value: 5214
+      type: number
+    width:
+      value: 408
+      type: number
+    height:
+      value: 65
+      type: number
+    custom: {}
+created: '2024-11-19T16:50:24.262684+00:00'
+modified: '2024-11-19T16:50:24.262684+00:00'

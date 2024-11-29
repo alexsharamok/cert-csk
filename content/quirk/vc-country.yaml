@@ -1,0 +1,3 @@
+id: vc-country
+name: Country
+description: ISO 3166 code for the country. Resolved from the Vercel geolocation data.

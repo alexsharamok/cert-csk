@@ -1,0 +1,79 @@
+composition:
+  _name: Hero - Contentful Article
+  _id: 403a2222-cfb2-462c-b824-7e8ad9b5543a
+  type: hero
+  variant: backgroundImage
+  parameters:
+    image:
+      type: asset
+      value:
+        - _id: 327cc30a-192e-44f5-b659-449e8ceaa1d0
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                ${#jptr:/Single Article
+                Content/fields/thumbnail/fields/file/url}
+          _source: custom-url
+    title:
+      type: text
+      value: ${#jptr:/Single Article Content/fields/title}
+    textColor:
+      type: tp-color-palette-parameter
+      value: secondary-content
+    titleStyle:
+      type: tp-title-style-parameter
+      value: h2
+    description:
+      type: text
+      value: ${#jptr:/Single Article Content/fields/description}
+    backgroundColor:
+      type: tp-color-palette-parameter
+      value: primary
+  _dataResources:
+    Single Article Content:
+      type: singleArticle
+      variables:
+        locale: ''
+        entryIds: 1WZ4epRq4tDmmQs3UpmFKC
+      isPatternParameter: true
+      ignorePatternParameterDefault: false
+  _overridability:
+    variants: true
+    parameters:
+      $viz: 'yes'
+      delay: 'yes'
+      image: 'no'
+      title: 'no'
+      video: 'yes'
+      duration: 'yes'
+      marginTop: 'yes'
+      objectFit: 'yes'
+      textColor: 'yes'
+      fullHeight: 'yes'
+      paddingTop: 'yes'
+      titleStyle: 'yes'
+      description: 'no'
+      eyebrowText: 'yes'
+      marginBottom: 'yes'
+      overlayColor: 'yes'
+      animationType: 'yes'
+      paddingBottom: 'yes'
+      animationOrder: 'yes'
+      overlayOpacity: 'yes'
+      backgroundColor: 'yes'
+      animationPreview: 'yes'
+      containerVariant: 'yes'
+      primaryButtonCopy: 'yes'
+      primaryButtonLink: 'yes'
+      primaryButtonStyle: 'yes'
+      secondaryButtonCopy: 'yes'
+      secondaryButtonLink: 'yes'
+      secondaryButtonStyle: 'yes'
+      primaryButtonAnimationType: 'yes'
+      secondaryButtonAnimationType: 'yes'
+    hideLockedParameters: true
+created: '2024-11-21T13:00:21.417077+00:00'
+modified: '2024-11-21T13:06:57.274562+00:00'
+pattern: true

@@ -1,0 +1,48 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: videoPlayer
+name: Video Player
+icon: film
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: id
+    name: Id
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: source
+    name: Source
+    type: select
+    typeConfig:
+      options:
+        - text: YouTube
+          value: YouTube
+        - text: Loom
+          value: Loom
+  - id: testField
+    name: Test Field
+    type: text
+    typeConfig: null
+    localizable: true
+useTeamPermissions: true
+slots:
+  - id: related
+    name: Related
+    allowedComponents:
+      - callToAction
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+titleParameter: title
+canBeComposition: false
+created: '2024-11-20T16:58:54.691199+00:00'
+updated: '2024-11-21T15:51:46.677588+00:00'

@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 653da1c7-a657-48f4-a013-f413fbc9e2a6
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: foxie-edianiak-zS-ee-D4v2o-unsplash.jpg
+    file:
+      type: file
+      value: e5e93673-6cb4-41ec-9ad5-ad1f9644056e
+    mediaType:
+      value: image/jpeg
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/dVZdlCyHQOaqzJxd_NOL8w-foxie-edianiak-zS-ee-D4v2o-unsplash.jpg
+      type: text
+    size:
+      value: 1503791
+      type: number
+    width:
+      value: 4608
+      type: number
+    height:
+      value: 3072
+      type: number
+    custom: {}
+created: '2024-11-29T10:18:27.922504+00:00'
+modified: '2024-11-29T10:18:27.922504+00:00'

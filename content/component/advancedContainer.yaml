@@ -24,7 +24,6 @@ parameters:
   - id: backgroundColor
     name: Background Color
     type: tp-color-palette-parameter
-    helpText: ''
     typeConfig:
       defaultColorHex: '#fff'
       allowThemeColors:
@@ -34,11 +33,9 @@ parameters:
         - accent
       isAllowCustomColor: true
       isShowAdvancedSettings: true
-    localizable: false
   - id: paddingTop
     name: Padding Top
     type: select
-    helpText: ''
     typeConfig:
       options:
         - text: Small
@@ -52,7 +49,6 @@ parameters:
   - id: paddingBottom
     name: Padding Bottom
     type: select
-    helpText: ''
     typeConfig:
       options:
         - text: Small
@@ -66,7 +62,6 @@ parameters:
   - id: marginTop
     name: Margin Top
     type: select
-    helpText: ''
     typeConfig:
       options:
         - text: Small
@@ -80,7 +75,6 @@ parameters:
   - id: marginBottom
     name: Margin Bottom
     type: select
-    helpText: ''
     typeConfig:
       options:
         - text: Small
@@ -114,8 +108,8 @@ slots:
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
-created: '2024-01-17T11:56:44.437724+00:00'
-updated: '2024-03-26T12:34:30.544475+00:00'
+created: '2024-11-19T16:09:45.613118+00:00'
+updated: '2024-11-19T16:34:32.228193+00:00'
 variants:
   - id: fluidContent
     name: Fluid Content

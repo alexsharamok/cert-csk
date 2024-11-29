@@ -1,0 +1,60 @@
+id: articles
+displayName: Articles
+ttl: 30
+path: /entries?${filters}${contentTypeQuery}
+custom:
+  include: 1
+  includeFields: []
+  allowContentTypeIds:
+    - article
+  enableFilterByLocale: false
+  enableAdvancedFilters: false
+method: GET
+purgeKey: ae87cdcd-8e6f-4454-8d10-91ad9de50c5c
+archetype: queryEntry
+variables:
+  skip:
+    type: number
+    default: ''
+    displayName: Skip
+  limit:
+    type: text
+    default: '5'
+    displayName: Limit
+  order:
+    type: text
+    default: ''
+    displayName: Order
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  filters:
+    type: text
+    default: ''
+    displayName: Filters
+  keyword:
+    type: text
+    default: ''
+    displayName: Search Text
+  contentTypeQuery:
+    type: text
+    default: ''
+    displayName: Content Type
+parameters:
+  - key: include
+    value: '1'
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+  - key: order
+    value: ${order}
+  - key: query
+    value: ${keyword}
+  - key: limit
+    value: ${limit}
+  - key: skip
+    value: ${skip}
+    omitIfEmpty: true
+dataSourceId: contentful
+allowedOnComponents: []

@@ -1,0 +1,33 @@
+id: contentBlock
+displayName: Content Block
+ttl: 30
+path: /entries
+custom:
+  include: 1
+  includeFields: []
+  allowContentTypeIds:
+    - contentBlock
+  enableFilterByLocale: false
+  enableAdvancedFilters: false
+method: GET
+purgeKey: 66cac4cd-1d35-4ee3-945f-56d4689e97f5
+archetype: singleEntry
+variables:
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  entryIds:
+    type: text
+    default: ''
+    displayName: Entry Ids
+parameters:
+  - key: include
+    value: '1'
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+  - key: sys.id[in]
+    value: ${entryIds}
+dataSourceId: contentful
+allowedOnComponents: []

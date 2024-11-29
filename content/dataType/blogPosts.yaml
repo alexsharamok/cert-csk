@@ -1,0 +1,60 @@
+id: blogPosts
+displayName: Blog Posts
+ttl: 30
+path: /entries?${filters}${contentTypeQuery}
+custom:
+  include: 1
+  includeFields: []
+  allowContentTypeIds:
+    - pageBlogPost
+  enableFilterByLocale: false
+  enableAdvancedFilters: false
+method: GET
+purgeKey: 2180ec49-32f1-491b-b12a-655c70f1f196
+archetype: queryEntry
+variables:
+  skip:
+    type: number
+    default: ''
+    displayName: Skip
+  limit:
+    type: text
+    default: '5'
+    displayName: Limit
+  order:
+    type: text
+    default: ''
+    displayName: Order
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  filters:
+    type: text
+    default: ''
+    displayName: Filters
+  keyword:
+    type: text
+    default: ''
+    displayName: Search Text
+  contentTypeQuery:
+    type: text
+    default: ''
+    displayName: Content Type
+parameters:
+  - key: include
+    value: '1'
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+  - key: order
+    value: ${order}
+  - key: query
+    value: ${keyword}
+  - key: limit
+    value: ${limit}
+  - key: skip
+    value: ${skip}
+    omitIfEmpty: true
+dataSourceId: contentfulBlogDataSource
+allowedOnComponents: []

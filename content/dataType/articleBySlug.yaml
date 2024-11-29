@@ -1,0 +1,43 @@
+id: articleBySlug
+displayName: Article by Slug
+ttl: 30
+body: ''
+path: /entries
+custom:
+  slugField: fields.slug
+  displayField: title
+  contentTypeId: article
+  includeFields: []
+  enableFilterByLocale: false
+method: GET
+purgeKey: 525af7d5-6645-4a59-b29a-e94d46ba170d
+archetype: entryByField
+variables:
+  slug:
+    type: text
+    default: ''
+    displayName: Slug
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  slugField:
+    type: text
+    default: fields.slug[in]
+    displayName: Slug Field
+  contentType:
+    type: text
+    default: article
+    displayName: Content Type
+parameters:
+  - key: include
+    value: '1'
+  - key: ${slugField}
+    value: ${slug}
+  - key: content_type
+    value: ${contentType}
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+dataSourceId: contentful
+allowedOnComponents: []

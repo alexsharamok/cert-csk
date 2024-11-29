@@ -1,0 +1,37 @@
+id: selectedArticles
+displayName: Selected Articles
+ttl: 30
+path: /entries
+custom:
+  include: 1
+  imagePath: thumbnail
+  searchField:
+    id: fields.title
+    type: Symbol
+  includeFields: []
+  allowContentTypeIds:
+    - article
+  enableFilterByLocale: false
+  enableAdvancedFilters: false
+method: GET
+purgeKey: f096a6d0-7496-4987-a0fd-e97259dbd60e
+archetype: multipleEntry
+variables:
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  entryIds:
+    type: text
+    default: ''
+    displayName: Entry Ids
+parameters:
+  - key: include
+    value: '1'
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+  - key: sys.id[in]
+    value: ${entryIds}
+dataSourceId: contentful
+allowedOnComponents: []

@@ -1,0 +1,10 @@
+id: 92b704a7-156c-49a8-b302-76f7157b22f4
+name: Blogpost
+order: 600
+path: /blog/:blogpost
+type: composition
+pathSegment: ':blogpost'
+data:
+  previewValue: ''
+compositionId: 18466493-4b11-47cd-b4d4-aa5f3df1e967
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

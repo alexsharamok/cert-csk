@@ -1,0 +1,44 @@
+id: blogBySlug
+displayName: Blog by Slug
+ttl: 30
+body: ''
+path: /entries
+custom:
+  imagePath: featuredImage
+  slugField: fields.slug
+  displayField: internalName
+  contentTypeId: pageBlogPost
+  includeFields: []
+  enableFilterByLocale: false
+method: GET
+purgeKey: f7aabee2-a47d-441d-83aa-b0190aaa654e
+archetype: entryByField
+variables:
+  slug:
+    type: text
+    default: ''
+    displayName: Slug
+  locale:
+    type: text
+    default: ''
+    displayName: Locale
+  slugField:
+    type: text
+    default: fields.slug[in]
+    displayName: Slug Field
+  contentType:
+    type: text
+    default: pageBlogPost
+    displayName: Content Type
+parameters:
+  - key: include
+    value: '1'
+  - key: ${slugField}
+    value: ${slug}
+  - key: content_type
+    value: ${contentType}
+  - key: locale
+    value: ${locale}
+    omitIfEmpty: true
+dataSourceId: contentfulBlogDataSource
+allowedOnComponents: []

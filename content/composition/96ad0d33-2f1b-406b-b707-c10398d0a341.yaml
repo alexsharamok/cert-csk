@@ -1,0 +1,55 @@
+composition:
+  _name: A History of Coffee
+  _id: 96ad0d33-2f1b-406b-b707-c10398d0a341
+  _slug: a-history-of-coffee
+  type: articlePage
+  parameters:
+    pageTitle:
+      type: text
+      value: A History of Coffee
+  slots:
+    pageFooter:
+      - _id: e3e3140f-17b3-438c-a1cc-1d2499484388
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: ff688d38-b259-499f-95e1-1e65fdd9317e
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 1773a169-51e8-4690-ba07-ca901606d6b4
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 6e099d14-0090-4c2e-9284-cc6b96c4c8cd
+                type: image
+                fields:
+                  url:
+                    type: text
+                    value: >-
+                      https://res.cloudinary.com/uniformdev/image/upload/v1685477686/JavaDrip/Flavor_Ratios.jpg
+                _source: custom-url
+          title:
+            type: text
+            value: Article Title
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h2
+          description:
+            type: text
+            value: Article abstract
+      - _id: 0ab56412-0e13-4517-b206-aac3cbdf8def
+        type: content
+        parameters:
+          title:
+            type: text
+            value: Article Body
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+created: '2024-11-21T10:32:53.128797+00:00'
+modified: '2024-11-21T10:34:00.230182+00:00'
+pattern: false

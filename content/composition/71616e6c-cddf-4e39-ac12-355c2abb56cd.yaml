@@ -1,0 +1,123 @@
+composition:
+  _name: The Golden Ratio of coffee
+  _id: 71616e6c-cddf-4e39-ac12-355c2abb56cd
+  _slug: the-golden-ratio-of-coffee
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: The Golden Ratio of Coffee
+  slots:
+    pageFooter:
+      - _id: 3ac1f95b-4d01-4277-be74-765930f32cd1
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 7d044ec6-9f63-4ed0-99b3-747e5fcbb3d3
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: f4d34bc0-15a5-4c7a-9de8-f9db45c799eb
+        type: hero
+        _pattern: 403a2222-cfb2-462c-b824-7e8ad9b5543a
+        _dataResources:
+          Single Article Content:
+            type: singleArticle
+            variables:
+              locale: ''
+              entryIds: 1WZ4epRq4tDmmQs3UpmFKC
+      - _id: 748fd8df-47a3-4196-a834-06084797b869
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+          displayPlaceholderNodes:
+            type: checkbox
+            value: true
+      - _id: cdba9842-4103-4907-8a2b-6083e689c5fd
+        type: videoPlayer
+        slots:
+          related:
+            - _id: 1f491fb5-83f7-44de-ab54-5b6f03a829b6
+              type: callToAction
+              parameters:
+                title:
+                  type: text
+                  value: Watch more videos on YouTube
+                titleStyle:
+                  type: tp-title-style-parameter
+                  value: h3
+                primaryButtonCopy:
+                  type: text
+                  value: go home
+                primaryButtonLink:
+                  type: link
+                  value:
+                    path: /
+                    type: projectMapNode
+                    nodeId: 5a9c6cac-a0cd-43ca-b2df-8706b1f4ba81
+                    projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+        parameters:
+          id:
+            type: text
+            value: lpHAIp60mXs
+          title:
+            type: text
+            value: A Magical Cup of Coffee
+          source:
+            type: select
+            value: YouTube
+          description:
+            type: text
+            value: How do you create magic in a cup? This is how!
+      - _id: a50130e1-08e4-458a-b87c-7a9dcf23f750
+        type: content
+        parameters:
+          text:
+            type: text
+            value: >
+              Water is essential for all life on earth, however we rely on a
+              balance of water to sustain life. Too little and we dry up, too
+              much and we flood.
+
+              Now, I know what you are asking, what does WATER have to do with
+              my COFFEE?
+
+              Like all fine things in life, complex flavors rely on balance to
+              really bring to life all the amazing tastes and sensations. The
+              same applies to coffee, with its inability to cope with unbalanced
+              or over balanced dosing.
+
+              I tend to refer to coffee as being allergic to the 21st century,
+              and if you thought hipsters were fussy about their coffee, you’ll
+              be surprised to know that their coffee is WAY more fussy than they
+              are! Here is a sneaky tip to help get the most out of your
+              espresso shot!
+
+              Lets focus on RATIOs. Specifically the WATER:COFFEE ratio in both
+              your BASKET and your CUP!
+
+              The Golden Ratios for Espresso are:
+
+              * Basket - 2:1
+
+              * Cup - 7:1
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+  _dataResources:
+    Golden Ratio article:
+      type: singleArticle
+      variables:
+        locale: ''
+        entryIds: 1WZ4epRq4tDmmQs3UpmFKC
+created: '2024-11-20T16:25:11.960193+00:00'
+modified: '2024-11-21T13:10:57.616887+00:00'
+pattern: false
