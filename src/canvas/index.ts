@@ -119,4 +119,4 @@ export { CountdownVariant } from './Countdown';
 export type { CountdownProps } from './Countdown';
 
 export { default as VideoPlayer } from './VideoPlayer';
-export type { VideoPlayerProps } from './VideoPlayer';   
+export type { VideoPlayerProps } from './VideoPlayer';
