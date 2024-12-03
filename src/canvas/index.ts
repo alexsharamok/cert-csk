@@ -41,6 +41,9 @@ import './Testimonial';
 import './Video';
 import './VideoPlayer';
 
+import '@/modules/search';
+import { overrideCanvasComponents } from '../modules/java-drip-new-design/overrideCanvasComponents';
+
 export { default as Accordion } from './Accordion';
 
 export { default as AddToCart } from './AddToCart';
@@ -120,3 +123,11 @@ export type { CountdownProps } from './Countdown';
 
 export { default as VideoPlayer } from './VideoPlayer';
 export type { VideoPlayerProps } from './VideoPlayer';
+
+import SearchEntryResultList from '../modules/search/SearchEntryResultList';
+
+// This is override of Search Entry Result List component to apply custom styling
+overrideCanvasComponents({
+    type: 'searchEntryResultList',
+    component: SearchEntryResultList,
+  });
