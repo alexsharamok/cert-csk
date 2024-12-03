@@ -19,7 +19,12 @@ const App = ({
   Component,
   pageProps,
   serverUniformContext,
-}: UniformAppProps<{ data: RootComponentInstance; context: unknown }>) => {
+}: UniformAppProps<{
+   data: RootComponentInstance;
+   context?: unknown;
+   translations?: Record<string, string>;
+  }>) => {
+  const router = useRouter();
   const { data: composition } = pageProps || {};
   const {
     pageTitle,
@@ -104,7 +109,15 @@ const App = ({
       </Head>
       <LazyMotion features={domAnimation}>
         <UniformContext context={serverUniformContext ?? clientContext}>
-          <Component {...pageProps} />
+          {/* FixMe: Think what timezone to use */}
+          <NextIntlClientProvider
+            locale={router.locale || 'en-US'}
+            messages={pageProps.translations}
+            timeZone="America/Chicago"
+            onError={process.env.NODE_ENV !== 'development' ? () => null : undefined}
+          >
+            <Component {...pageProps} />
+          </NextIntlClientProvider>
         </UniformContext>
       </LazyMotion>
     </>
