@@ -1,5 +1,27 @@
-import { CANVAS_PUBLISHED_STATE, CANVAS_DRAFT_STATE, RouteClient } from '@uniformdev/canvas';
+import { CANVAS_PUBLISHED_STATE, CANVAS_DRAFT_STATE, RouteClient, ContentClient } from '@uniformdev/canvas';
 import { ProjectMapClient } from '@uniformdev/project-map';
+
+export const getContentClient = () => {
+  const apiKey = process.env.UNIFORM_API_KEY;
+  const apiHost = process.env.UNIFORM_CLI_BASE_URL || 'https://uniform.app';
+  const edgeApiHost = process.env.UNIFORM_CLI_BASE_EDGE_URL || 'https://uniform.global';
+  const projectId = process.env.UNIFORM_PROJECT_ID;
+
+  if (!apiKey) throw new Error('apiKey is not specified. ContentClient cannot be instantiated');
+
+  if (!apiHost) throw new Error('apiHost is not specified. ContentClient cannot be instantiated');
+
+  if (!edgeApiHost) throw new Error('edgeApiHost is not specified. ContentClient cannot be instantiated');
+
+  if (!projectId) throw new Error('projectId is not specified. ContentClient cannot be instantiated.');
+
+  return new ContentClient({
+    apiKey,
+    apiHost,
+    projectId,
+    edgeApiHost,
+  });
+};
 
 export const getRouteClient = () => {
   const apiKey = process.env.UNIFORM_API_KEY;
