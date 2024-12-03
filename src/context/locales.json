@@ -1,5 +1,9 @@
 {
-  "locales": [],
-  "localeNames": {},
-  "defaultLocale": ""
+  "locales": [
+    "en-US"
+  ],
+  "localeNames": {
+    "en-US": "English USA 🇺🇸"
+  },
+  "defaultLocale": "en-US"
 }
