@@ -1,14 +1,14 @@
-import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE, EntryData, ContentClient, flattenValues } from '@uniformdev/canvas';
+import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from '@uniformdev/canvas';
 import { withUniformGetStaticProps, prependLocale } from '@uniformdev/canvas-next/route';
-import { getBreadcrumbs, getProjectMapClient, getRouteClient, getContentClient } from '../utilities/canvas/canvasClients';
+import { getBreadcrumbs, getProjectMapClient, getRouteClient } from '../utilities/canvas/canvasClients';
 export { default } from '../components/BasePage';
 
 // @ts-ignore: It is assumed that each application implements the modules at the appropriate location
-import { getFilterValues, mapUniformContentEntryFields } from '@/modules/search/utils';
+//import { getFilterValues, mapUniformContentEntryFields } from '@/modules/search/utils';
 // @ts-ignore: It is assumed that each application implements the modules at the appropriate location
-import { FilterBy } from '@/modules/search/EntryFilterBox';
+//import { FilterBy } from '@/modules/search/EntryFilterBox';
 // @ts-ignore: It is assumed that each application implements the modules at the appropriate location
-import { ARRAY_OPERATORS } from '@/modules/search/UniformEntrySearchProvider';
+//import { ARRAY_OPERATORS } from '@/modules/search/UniformEntrySearchProvider';
 // @ts-ignore: It is assumed that each application implements the localeSettings json at the appropriate location
 import localizationSettings from '@/context/locales.json';
 // @ts-ignore: It is assumed that each application implements the utilities at the appropriate location
@@ -48,12 +48,12 @@ export const getStaticProps = withUniformGetStaticProps({
       urlSegments: typeof slug === 'string' ? slug?.split('/') : slug,
     });
 
-    const uniformEntrySearchEngine = findSlotsWithType(composition, 'uniformEntrySearchEngine');
+    //const uniformEntrySearchEngine = findSlotsWithType(composition, 'uniformEntrySearchEngine');
 
-    const _locale = _context.locale || _context.defaultLocale || 'en-US';
+    //const _locale = _context.locale || _context.defaultLocale || 'en-US';
 
     //When we have a search engine component in the composition, we need to fetch initial the search results
-    let initialSearchResults = {};
+    //let initialSearchResults = {};
     // if (uniformEntrySearchEngine) {
     //   const entryFilterBox = findSlotsWithType(composition, 'entryFilterBox');
 
