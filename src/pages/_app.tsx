@@ -20,10 +20,10 @@ const App = ({
   pageProps,
   serverUniformContext,
 }: UniformAppProps<{
-   data: RootComponentInstance;
-   context?: unknown;
-   translations?: Record<string, string>;
-  }>) => {
+  data: RootComponentInstance;
+  context?: unknown;
+  translations?: Record<string, string>;
+}>) => {
   const router = useRouter();
   const { data: composition } = pageProps || {};
   const {

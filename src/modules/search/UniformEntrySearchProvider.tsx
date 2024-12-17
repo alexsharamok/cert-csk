@@ -78,7 +78,7 @@ const UniformEntrySearchContextProvider: FC<ComponentProps<UniformEntrySearchCon
   pageSize: initPageSize,
   children,
 }) => {
-  const { initialSearchResults } = useComponentStarterKitContext();  
+  const { initialSearchResults } = useComponentStarterKitContext();
 
   const {
     filterBy: initialFilterBy = [],
@@ -147,7 +147,7 @@ const UniformEntrySearchContextProvider: FC<ComponentProps<UniformEntrySearchCon
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filterBy, isResultPrefetched]);
 
-  useEffect(() => {    
+  useEffect(() => {
     if (!isSearchEnabled) return;
     setIsLoading(true);
     searchEngine({
@@ -159,7 +159,6 @@ const UniformEntrySearchContextProvider: FC<ComponentProps<UniformEntrySearchCon
       ...(search ? { search } : undefined),
     });
   }, [additionalFilters, baseFilter, currentPage, locale, pageSize, search, searchEngine, isSearchEnabled]);
-  
 
   const handleEnableSearch = useCallback(
     <T,>(setCallback: Dispatch<SetStateAction<T>>) =>
