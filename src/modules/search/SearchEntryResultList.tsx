@@ -145,16 +145,19 @@ const SearchEntryResultList: FC<ComponentProps<SearchResultListProps>> = ({ comp
     >
       {isLoading && !resultEntries
         ? cardSkeleton
-        : resultEntries?.map(entry =>             
-            {console.log('search result item component ', JSON.stringify(component?.slots?.resultItem?.[0], null, 2));
-              console.log('search result entry ', entry);
-              return (<EntryItem
-              key={entry.id}
-              entry={entry}
-              entryStyles={entryStyles}
-              component={component?.slots?.resultItem?.[0] || { type: 'card' }}
-            />)}
-          )}          
+        : resultEntries?.map(entry => {
+            //console.log('search result item component ', JSON.stringify(component?.slots?.resultItem?.[0], null, 2));
+            //console.log('search result entry ', entry);
+            return (
+              <EntryItem
+                key={entry.id}
+                entry={entry}
+                entryStyles={entryStyles}
+                component={component?.slots?.resultItem?.[0] || { type: 'card' }}
+              />
+            );
+          }
+        )}          
     </div>
   );
 };
