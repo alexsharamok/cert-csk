@@ -1,4 +1,7 @@
 declare namespace Types {
+  type EntryData = import('@uniformdev/canvas-react').EntryData;
+  type EntryApiResponse = import('@uniformdev/canvas-react').EntryApiResponse;
+
   type ProjectMapLink = {
     path: string;
     type?: string;
