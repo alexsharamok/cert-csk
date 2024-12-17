@@ -118,8 +118,6 @@ const UniformEntrySearchContextProvider: FC<ComponentProps<UniformEntrySearchCon
     mapUniformContentEntryFields,
   });
 
-  console.log('filterBy', filterBy);
-
   useEffect(() => {
     setCurrentPage(0);
   }, [pageSize]);
@@ -134,8 +132,6 @@ const UniformEntrySearchContextProvider: FC<ComponentProps<UniformEntrySearchCon
         }, {}) || {},
     [initialFilters]
   );
-
-  console.log('initial filters', filterBy);
 
   useEffect(() => {
     if (!filterBy.length || isResultPrefetched) return;
