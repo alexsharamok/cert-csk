@@ -7,7 +7,6 @@ import './CardBlock';
 import './ContentBlock';
 import './Footer';
 import './Hero';
-import './HeroContainer';
 import './NavLink';
 import './ImageGallery';
 import './Review';
