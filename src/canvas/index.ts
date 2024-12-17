@@ -40,6 +40,7 @@ import './Spacer';
 import './Testimonial';
 import './Video';
 import './VideoPlayer';
+import '../canvas/ArticleContent';
 
 import '@/modules/search';
 import { overrideCanvasComponents } from '../modules/java-drip-new-design/overrideCanvasComponents';
@@ -123,6 +124,8 @@ export type { CountdownProps } from './Countdown';
 
 export { default as VideoPlayer } from './VideoPlayer';
 export type { VideoPlayerProps } from './VideoPlayer';
+
+
 
 import SearchEntryResultList from '../modules/search/SearchEntryResultList';
 
