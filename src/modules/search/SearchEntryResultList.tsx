@@ -156,7 +156,7 @@ const SearchEntryResultList: FC<ComponentProps<SearchResultListProps>> = ({ comp
                 component={component?.slots?.resultItem?.[0] || { type: 'card' }}
               />
             );
-          })}          
+          })}
     </div>
   );
 };

@@ -2,17 +2,7 @@ import { CANVAS_DRAFT_STATE, CANVAS_PUBLISHED_STATE } from '@uniformdev/canvas';
 import { withUniformGetStaticProps, prependLocale } from '@uniformdev/canvas-next/route';
 import { getBreadcrumbs, getProjectMapClient, getRouteClient } from '../utilities/canvas/canvasClients';
 export { default } from '../components/BasePage';
-
-// @ts-ignore: It is assumed that each application implements the modules at the appropriate location
-//import { getFilterValues, mapUniformContentEntryFields } from '@/modules/search/utils';
-// @ts-ignore: It is assumed that each application implements the modules at the appropriate location
-//import { FilterBy } from '@/modules/search/EntryFilterBox';
-// @ts-ignore: It is assumed that each application implements the modules at the appropriate location
-//import { ARRAY_OPERATORS } from '@/modules/search/UniformEntrySearchProvider';
-// @ts-ignore: It is assumed that each application implements the localeSettings json at the appropriate location
 import localizationSettings from '@/context/locales.json';
-// @ts-ignore: It is assumed that each application implements the utilities at the appropriate location
-import { findSlotsWithType } from '@/utilities';
 
 // Doc: https://docs.uniform.app/docs/guides/composition/url-management/routing/slug-based-routing
 
@@ -95,8 +85,8 @@ export const getStaticProps = withUniformGetStaticProps({
       .catch(() => ({}));
 
     return {
-      props: { 
-        preview, 
+      props: {
+        preview,
         data: composition || null,
         context: { breadcrumbs },
         localizationSettings,
