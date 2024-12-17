@@ -114,4 +114,17 @@ declare namespace Types {
     localeNames: Record<string, string>;
     defaultLocale: string;
   };
+
+  type UniformParameter<T> = {
+    type: string;
+    value?: T;
+  };
+
+  type UniformEntry<T> = Omit<EntryData, 'fields'> & {
+    fields: T;
+  };
+
+  type UniformEntryApiResponse<T> = Omit<EntryApiResponse, 'entry'> & {
+    entry: UniformEntry<T>;
+  };
 }
