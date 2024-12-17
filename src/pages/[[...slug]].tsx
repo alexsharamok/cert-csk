@@ -16,13 +16,13 @@ import { findSlotsWithType } from '@/utilities';
 
 // Doc: https://docs.uniform.app/docs/guides/composition/url-management/routing/slug-based-routing
 
-const getMemoizedContentClient = (() => {
-  let canvasClient: ContentClient;
-  return () => {
-    if (!canvasClient) canvasClient = getContentClient();
-    return canvasClient;
-  };
-})();
+// const getMemoizedContentClient = (() => {
+//   let canvasClient: ContentClient;
+//   return () => {
+//     if (!canvasClient) canvasClient = getContentClient();
+//     return canvasClient;
+//   };
+// })();
 
 export const getStaticProps = withUniformGetStaticProps({
   requestOptions: context => ({
@@ -54,41 +54,41 @@ export const getStaticProps = withUniformGetStaticProps({
 
     //When we have a search engine component in the composition, we need to fetch initial the search results
     let initialSearchResults = {};
-    if (uniformEntrySearchEngine) {
-      const entryFilterBox = findSlotsWithType(composition, 'entryFilterBox');
+    // if (uniformEntrySearchEngine) {
+    //   const entryFilterBox = findSlotsWithType(composition, 'entryFilterBox');
 
-      const initialFiltersValue: EntryData[] = uniformEntrySearchEngine.parameters?.initialFilters
-        ?.value as EntryData[];
+    //   const initialFiltersValue: EntryData[] = uniformEntrySearchEngine.parameters?.initialFilters
+    //     ?.value as EntryData[];
 
-      const filterByValue = entryFilterBox?.parameters?.filterBy?.value as EntryData[];
+    //   const filterByValue = entryFilterBox?.parameters?.filterBy?.value as EntryData[];
 
-      const filterBy = filterByValue?.map((filter: EntryData) => flattenValues(filter)) || [];
+    //   const filterBy = filterByValue?.map((filter: EntryData) => flattenValues(filter)) || [];
 
-      const initialFilters = initialFiltersValue
-        .map((filter: EntryData) => flattenValues(filter) as { key: string; operator: string; value: string })
-        .reduce<Record<string, unknown>>((acc, { key, operator, value }) => {
-          acc[key] = ARRAY_OPERATORS.includes(operator) ? { [operator]: value.split('|') } : { [operator]: value };
-          return acc;
-        }, {});
+    //   const initialFilters = initialFiltersValue
+    //     .map((filter: EntryData) => flattenValues(filter) as { key: string; operator: string; value: string })
+    //     .reduce<Record<string, unknown>>((acc, { key, operator, value }) => {
+    //       acc[key] = ARRAY_OPERATORS.includes(operator) ? { [operator]: value.split('|') } : { [operator]: value };
+    //       return acc;
+    //     }, {});
 
-      const response = await getMemoizedContentClient().getEntries({
-        filters: { ...initialFilters },
-        withTotalCount: true,
-        locale: _locale,
-      });
+    //   const response = await getMemoizedContentClient().getEntries({
+    //     filters: { ...initialFilters },
+    //     withTotalCount: true,
+    //     locale: _locale,
+    //   });
 
-      const { entries = [], totalCount = 0 } = response;
-      const resultEntries = entries.map(mapUniformContentEntryFields);
+    //   const { entries = [], totalCount = 0 } = response;
+    //   const resultEntries = entries.map(mapUniformContentEntryFields);
 
-      const avaliableFilters = getFilterValues(resultEntries, filterBy as FilterBy[]);
+    //   const avaliableFilters = getFilterValues(resultEntries, filterBy as FilterBy[]);
 
-      initialSearchResults = {
-        avaliableFilters,
-        resultEntries,
-        totalCount,
-        filterBy,
-      };
-    }
+    //   initialSearchResults = {
+    //     avaliableFilters,
+    //     resultEntries,
+    //     totalCount,
+    //     filterBy,
+    //   };
+    // }
 
     const translations = await import(`@/locales/${_context.locale || 'en-US'}.json`)
       .then(m => m.default)
@@ -98,7 +98,7 @@ export const getStaticProps = withUniformGetStaticProps({
       props: { 
         preview, 
         data: composition || null,
-        context: { breadcrumbs, initialSearchResults },
+        context: { breadcrumbs },
         localizationSettings,
         translations,
       },
