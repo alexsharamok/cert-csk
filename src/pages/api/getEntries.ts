@@ -12,9 +12,7 @@ const getMemoizedContentClient = (() => {
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    const response = await getMemoizedContentClient().getEntries(req.body);
-    console.log(req.body);
-    console.log(response);
+    const response = await getMemoizedContentClient().getEntries(req.body);    
     return res.status(200).json(response);
   } catch (error) {
     return res.status(500).json(error);
