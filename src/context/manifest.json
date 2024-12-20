@@ -27,7 +27,7 @@
           "cap": 100,
           "dur": "p",
           "crit": {
-            "op": "&",
+            "op": "|",
             "type": "G",
             "clauses": [
               {
@@ -37,6 +37,15 @@
                   "cs": false,
                   "op": "=",
                   "rhs": "dnipro"
+                }
+              },
+              {
+                "key": "vc-country",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "ua"
                 }
               }
             ]
