@@ -1,47 +1,42 @@
-import { parse } from "cookie";
-import { NextRequest, NextResponse } from "next/server";
-import {
-  Context,
-  CookieTransitionDataStore,
-  ManifestV2,
-  UNIFORM_DEFAULT_COOKIE_NAME,
-} from "@uniformdev/context";
-import { createUniformEdgeMiddleware } from "@uniformdev/context-edge-vercel";
-import manifest from "./context/manifest.json";
+import { parse } from 'cookie';
+import { NextRequest, NextResponse } from 'next/server';
+import { Context, CookieTransitionDataStore, ManifestV2, UNIFORM_DEFAULT_COOKIE_NAME } from '@uniformdev/context';
+import { createUniformEdgeMiddleware } from '@uniformdev/context-edge-vercel';
+import manifest from './context/manifest.json';
 
 export const config = {
   matcher: [
     /*
-    * Match all request paths except for the ones starting with:
-    * - _next
-    * - static (static files)
-    * - favicon.ico (favicon file)
-    */
-    "/(.*?trpc.*?|(?!static|.*\\..*|_next|images|img|api|favicon.ico).*)",
- ],
+     * Match all request paths except for the ones starting with:
+     * - _next
+     * - static (static files)
+     * - favicon.ico (favicon file)
+     */
+    '/(.*?trpc.*?|(?!static|.*\\..*|_next|images|img|api|favicon.ico).*)',
+  ],
 };
 
-  export async function middleware(request: NextRequest) {
-    const data = request.headers.get("x-nextjs-data");
-    const previewDataCookie = request.cookies.get("__next_preview_data");
-    const {
+export async function middleware(request: NextRequest) {
+  const data = request.headers.get('x-nextjs-data');
+  const previewDataCookie = request.cookies.get('__next_preview_data');
+  const {
     nextUrl: { search },
-    } = request;
-    const urlSearchParams = new URLSearchParams(search);
-    const params = Object.fromEntries(urlSearchParams.entries());
+  } = request;
+  const urlSearchParams = new URLSearchParams(search);
+  const params = Object.fromEntries(urlSearchParams.entries());
 
-    // disabling middleware in preview or locally
-    if (
+  // disabling middleware in preview or locally
+  if (
     Boolean(previewDataCookie) ||
     Boolean(data) ||
-    params.is_incontext_editing_mode === "true" ||
+    params.is_incontext_editing_mode === 'true' ||
     !process.env.VERCEL_URL
-    ) {
-      return NextResponse.next();
-    }
+  ) {
+    return NextResponse.next();
+  }
 
   const serverCookieValue = request
-    ? parse(request.headers.get("cookie") ?? "")[UNIFORM_DEFAULT_COOKIE_NAME]
+    ? parse(request.headers.get('cookie') ?? '')[UNIFORM_DEFAULT_COOKIE_NAME]
     : undefined;
 
   const context = new Context({
@@ -60,7 +55,7 @@ export const config = {
     request,
   });
 
-  response.headers.set("Cache-Control", "no-cache, no-store, must-revalidate");
+  response.headers.set('Cache-Control', 'no-cache, no-store, must-revalidate');
 
   return response;
 }
