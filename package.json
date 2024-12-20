@@ -35,7 +35,7 @@
     "@uniformdev/canvas-next": "^19.146.2",
     "@uniformdev/canvas-react": "^19.146.2",
     "@uniformdev/context": "^19.146.2",
-    "@uniformdev/context-edge-vercel": "^19.211.0",
+    "@uniformdev/context-edge-vercel": "19.146.2",
     "@uniformdev/context-next": "^19.146.2",
     "@uniformdev/context-react": "19.146.2",
     "@uniformdev/project-map": "^19.146.2",
