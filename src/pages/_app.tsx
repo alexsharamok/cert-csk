@@ -108,7 +108,7 @@ const App = ({
         {faviconHref && <link rel="shortcut icon" href={faviconHref} />}
       </Head>
       <LazyMotion features={domAnimation}>
-        <UniformContext context={serverUniformContext ?? clientContext}>
+        <UniformContext context={serverUniformContext ?? clientContext} outputType='edge'>
           {/* FixMe: Think what timezone to use */}
           <NextIntlClientProvider
             locale={router.locale || 'en-US'}
