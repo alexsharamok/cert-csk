@@ -11,15 +11,6 @@
             "type": "G",
             "clauses": [
               {
-                "key": "vc-country",
-                "type": "QK",
-                "match": {
-                  "cs": false,
-                  "op": "=",
-                  "rhs": "ua"
-                }
-              },
-              {
                 "type": "QS",
                 "match": {
                   "cs": false,
@@ -27,6 +18,26 @@
                   "rhs": "ua"
                 },
                 "queryName": "country"
+              }
+            ]
+          }
+        },
+        "dniproVisitor": {
+          "str": 50,
+          "cap": 100,
+          "dur": "p",
+          "crit": {
+            "op": "&",
+            "type": "G",
+            "clauses": [
+              {
+                "key": "vc-city",
+                "type": "QK",
+                "match": {
+                  "cs": false,
+                  "op": "=",
+                  "rhs": "dnipro"
+                }
               }
             ]
           }
