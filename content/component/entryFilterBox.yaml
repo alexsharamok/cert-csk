@@ -1,0 +1,26 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: entryFilterBox
+name: Entry Filter Box
+icon: layout-list
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: filterBy
+    name: Filter By
+    type: $block
+    typeConfig:
+      allowedTypes:
+        - filterBy
+categoryId: 2aa751bd-ca13-4829-80e8-6592407111af
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/USF/Filter_box_preview_image
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2024-11-29T17:15:07.874591+00:00'
+updated: '2024-11-29T17:15:07.874591+00:00'

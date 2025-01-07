@@ -1,0 +1,23 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchBox
+name: Search Box
+icon: search
+parameters:
+  - id: placeholder
+    name: Placeholder
+    type: text
+    helpText: The placeholder text of the input
+    typeConfig: null
+    localizable: true
+  - id: searchDelay
+    name: Search Delay
+    type: number
+    helpText: 'Default value: 300ms'
+    typeConfig: null
+categoryId: 2aa751bd-ca13-4829-80e8-6592407111af
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-11-29T17:05:52.840283+00:00'
+updated: '2024-11-29T17:05:52.840283+00:00'

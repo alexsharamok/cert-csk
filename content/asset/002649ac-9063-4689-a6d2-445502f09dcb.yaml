@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 002649ac-9063-4689-a6d2-445502f09dcb
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: science-related-blog-entry.webp
+    file:
+      type: file
+      value: 59523115-1afd-410b-b7c1-aa2ab899bc00
+    mediaType:
+      value: image/webp
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/OYGizhwhSjyZA5kgAXEfTA-science-related-blog-entry.webp
+      type: text
+    size:
+      value: 291220
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-12-02T08:13:54.726382+00:00'
+modified: '2024-12-02T08:13:54.726382+00:00'

@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: pagination
+name: Pagination
+icon: desktop
+parameters:
+  - id: pageToDisplay
+    name: Page To Display
+    type: number
+    helpText: 'Default value: 5 '
+    typeConfig: null
+categoryId: 2aa751bd-ca13-4829-80e8-6592407111af
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/USF/Pagination_preview_image
+useTeamPermissions: true
+slots: []
+canBeComposition: false
+created: '2024-11-29T17:08:02.922372+00:00'
+updated: '2024-11-29T17:08:02.922372+00:00'

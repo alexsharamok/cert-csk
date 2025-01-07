@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: articleContent
+name: Article Content
+icon: card
+parameters:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: article
+    name: Article
+    type: json
+    typeConfig: {}
+categoryId: 2aa751bd-ca13-4829-80e8-6592407111af
+useTeamPermissions: true
+slots: []
+titleParameter: title
+canBeComposition: false
+created: '2024-12-11T16:47:01.560883+00:00'
+updated: '2024-12-13T12:36:03.53535+00:00'

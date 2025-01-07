@@ -5,12 +5,6 @@ crit:
   op: '|'
   type: G
   clauses:
-    - key: vc-country
-      type: QK
-      match:
-        cs: false
-        op: '='
-        rhs: ua
     - type: QS
       match:
         cs: false

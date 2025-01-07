@@ -1,0 +1,42 @@
+composition:
+  _name: Box Article Pattern
+  _id: 7458380e-1315-4dd8-b7b6-c1e8dc47a767
+  type: box
+  slots:
+    content:
+      - _id: cf19f345-5352-47f5-aa29-cd2b1c0b8b82
+        type: articleContent
+        parameters:
+          title:
+            type: text
+            locales:
+              en-US: ${#jptr:/Article Entry by Slug Content/entry/fields/title/value}
+          article:
+            type: json
+            value: ${#jptr:/Article Entry by Slug Content/entry}
+        _overridability:
+          parameters:
+            $viz: 'yes'
+          hideLockedParameters: false
+  _dataResources:
+    Article Entry by Slug Content:
+      type: articleEntryBySlug
+      variables:
+        slug: introducing-the-latest-and-greatest-tools-for-developers
+        locale: ${locale}
+      isPatternParameter: true
+      ignorePatternParameterDefault: true
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      display: 'yes'
+      textAlign: 'yes'
+      alignItems: 'yes'
+      flexDirection: 'yes'
+      justifyContent: 'yes'
+    hideLockedParameters: false
+  _locales:
+    - en-US
+created: '2024-12-13T12:16:23.28606+00:00'
+modified: '2024-12-13T14:26:36.688533+00:00'
+pattern: true

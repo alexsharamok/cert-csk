@@ -1,0 +1,26 @@
+id: tag
+name: Tag
+created: '2024-11-29T18:33:01.858312+00:00'
+updated: '2024-12-13T19:17:29.445843+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+  - id: description
+    name: Description
+    type: text
+    typeConfig: null
+  - id: logo
+    name: Logo
+    type: asset
+    typeConfig: {}
+entryName: title
+thumbnailField: logo
+description: ''
+icon: hashtag
+type: contentType
+permissions: []

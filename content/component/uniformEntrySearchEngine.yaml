@@ -1,0 +1,36 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: uniformEntrySearchEngine
+name: Uniform Entry Search Engine
+icon: search-found
+parameters:
+  - id: initialFilters
+    name: Initial filters
+    type: $block
+    typeConfig:
+      allowedTypes:
+        - $loop
+        - searchFilter
+  - id: pageSize
+    name: Page Size
+    type: number
+    typeConfig:
+      max: '50'
+categoryId: 2aa751bd-ca13-4829-80e8-6592407111af
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/USF/Uniform_entry_search_engine_preview_image
+useTeamPermissions: true
+slots:
+  - id: content
+    name: Content
+    allowedComponents:
+      - grid
+      - searchEntryResultList
+      - spacer
+      - searchBox
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2024-11-29T16:58:19.6439+00:00'
+updated: '2024-11-29T18:58:38.316143+00:00'

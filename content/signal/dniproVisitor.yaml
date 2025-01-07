@@ -1,0 +1,22 @@
+id: dniproVisitor
+name: Dnipro visitor
+cap: 100
+crit:
+  op: '|'
+  type: G
+  clauses:
+    - key: vc-city
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: dnipro
+    - key: vc-country
+      type: QK
+      match:
+        cs: false
+        op: '='
+        rhs: ua
+dur: p
+description: ''
+str: 50

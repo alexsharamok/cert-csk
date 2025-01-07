@@ -1,0 +1,9 @@
+id: e920b4d7-222c-4351-a94a-7a1f1b79b6a3
+name: Edge test
+order: 500
+path: /blog/edge-test
+type: composition
+pathSegment: edge-test
+data: {}
+compositionId: 928ce610-bc82-4041-a490-f52d72db490a
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

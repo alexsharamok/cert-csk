@@ -1,0 +1,35 @@
+created: '2024-11-29T18:54:47.367875+00:00'
+modified: '2024-12-03T12:42:05.012422+00:00'
+pattern: false
+entry:
+  _id: 13fbeb46-2ecf-4df8-b48d-0859eb57b16e
+  _name: Introducing the latest and greatest tools for developers
+  _slug: introducing-the-latest-and-greatest-tools-for-developers
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/45LAhLfStKVYXM1Bvf8zFa/cc6c10823f6ce0cf1b90de55c89bfc21/dev1.webp
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: introducing-the-latest-and-greatest-tools-for-developers
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-13fbeb46-2ecf-4df8-b48d-0859eb57b16e-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: >-
+          958d78be-6f52-4b4c-84cc-97d96f090da5,31ad144e-86d1-45f9-9779-85ef90ad850e
+  _locales:
+    - en-US
+    - da
+  _overrides:
+    13fbeb46-2ecf-4df8-b48d-0859eb57b16e:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-13fbeb46-2ecf-4df8-b48d-0859eb57b16e-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

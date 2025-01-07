@@ -1,0 +1,37 @@
+id: contentSource
+name: Content Source
+created: '2024-11-29T18:27:35.52885+00:00'
+updated: '2024-11-29T18:27:35.52885+00:00'
+slugSettings: {}
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: value
+    name: Value
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: logo
+    name: Logo
+    type: asset
+    typeConfig: {}
+    localizable: true
+  - id: displayPriority
+    name: Display Priority
+    type: checkbox
+    typeConfig: null
+entryName: title
+thumbnailField: logo
+description: ''
+icon: link
+type: contentType
+permissions: []

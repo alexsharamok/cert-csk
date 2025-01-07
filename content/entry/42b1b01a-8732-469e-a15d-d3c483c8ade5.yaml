@@ -1,0 +1,51 @@
+created: '2024-12-02T08:12:02.444431+00:00'
+modified: '2024-12-19T10:34:51.131882+00:00'
+pattern: false
+entry:
+  _id: 42b1b01a-8732-469e-a15d-d3c483c8ade5
+  _name: Science
+  _slug: science
+  _thumbnail: >-
+    https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/OYGizhwhSjyZA5kgAXEfTA-science-related-blog-entry.webp
+  type: tag
+  fields:
+    logo:
+      type: asset
+      value:
+        - _id: 0c1419be-8f84-481a-8642-7cfb3b8005d9
+          type: image
+          fields:
+            id:
+              type: text
+              value: 002649ac-9063-4689-a6d2-445502f09dcb
+            url:
+              value: >-
+                https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/OYGizhwhSjyZA5kgAXEfTA-science-related-blog-entry.webp
+              type: text
+            file:
+              type: file
+              value: 59523115-1afd-410b-b7c1-aa2ab899bc00
+            size:
+              value: 291220
+              type: number
+            title:
+              type: text
+              value: science-related-blog-entry.webp
+            width:
+              value: 1024
+              type: number
+            height:
+              value: 1024
+              type: number
+            mediaType:
+              value: image/webp
+              type: text
+          _source: uniform-assets
+    title:
+      type: text
+      value: Science
+    description:
+      type: text
+      value: Science related topics
+  _locales:
+    - en-US

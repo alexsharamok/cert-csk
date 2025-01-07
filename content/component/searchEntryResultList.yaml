@@ -1,0 +1,22 @@
+# yaml-language-server: $schema=<https://uniform.app/schemas/json-schema/component-definition/v1.json>
+$schema: https://uniform.app/schemas/json-schema/component-definition/v1.json
+id: searchEntryResultList
+name: 'Search Entry Result List '
+icon: play-list-search
+parameters: []
+categoryId: 2aa751bd-ca13-4829-80e8-6592407111af
+previewImageUrl: >-
+  https://res.cloudinary.com/uniform-demos/image/upload/v1/preview-images/NewJavaDripTheme/USF/Search_entry_result_list_preview_image
+useTeamPermissions: true
+slots:
+  - id: resultItem
+    name: Result Item
+    allowedComponents:
+      - articleItem
+      - blogItem
+    allowAllComponents: false
+    inheritAllowedComponents: false
+    patternsInAllowedComponents: false
+canBeComposition: false
+created: '2024-11-29T16:42:51.600732+00:00'
+updated: '2024-11-29T16:46:21.829936+00:00'

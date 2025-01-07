@@ -1,0 +1,28 @@
+created: '2024-11-29T18:42:30.261052+00:00'
+modified: '2024-11-29T18:43:16.188043+00:00'
+pattern: false
+entry:
+  _id: 958d78be-6f52-4b4c-84cc-97d96f090da5
+  _name: Blog post
+  _slug: blog-post
+  _thumbnail: >-
+    https://img.uniform.global/p/75OBgngeTP6dTXBnaNY7Fw/0YKouwdsTFyYfZJQbDfJIQ-blog-entry.webp
+  type: tag
+  fields:
+    logo:
+      type: asset
+      value:
+        - _id: 792c6fcd-1316-4e33-aea4-76b6b9da0eec
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                https://img.uniform.global/p/75OBgngeTP6dTXBnaNY7Fw/0YKouwdsTFyYfZJQbDfJIQ-blog-entry.webp
+          _source: custom-url
+    title:
+      type: text
+      value: Blog post
+    description:
+      type: text
+      value: Blog post tag

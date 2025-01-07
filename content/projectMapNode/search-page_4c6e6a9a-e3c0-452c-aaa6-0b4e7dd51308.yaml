@@ -1,0 +1,9 @@
+id: 4c6e6a9a-e3c0-452c-aaa6-0b4e7dd51308
+name: Search Page
+order: 500
+path: /search-page
+type: composition
+pathSegment: search-page
+data: {}
+compositionId: 9552c6ed-64eb-46fc-8ecf-a65d9afa16d1
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

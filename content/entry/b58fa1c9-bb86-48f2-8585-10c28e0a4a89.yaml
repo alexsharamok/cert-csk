@@ -1,0 +1,34 @@
+created: '2024-11-29T18:46:36.544257+00:00'
+modified: '2024-12-02T08:19:00.723402+00:00'
+pattern: false
+entry:
+  _id: b58fa1c9-bb86-48f2-8585-10c28e0a4a89
+  _name: How AR will transform our lives in 2050
+  _slug: how-ar-will-transform-our-lives-in-2050
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/4lqxYpPLHdzfy0f8hONbGq/8cccab69bfb0cd39d8c6e3a7eb3ab98a/ameer-basheer-2r5adxul49E-unsplash__1_.jpg
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: how-ar-will-transform-our-lives-in-2050
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-b58fa1c9-bb86-48f2-8585-10c28e0a4a89-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: >-
+          31ad144e-86d1-45f9-9779-85ef90ad850e,42b1b01a-8732-469e-a15d-d3c483c8ade5
+  _locales:
+    - en-US
+  _overrides:
+    b58fa1c9-bb86-48f2-8585-10c28e0a4a89:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-b58fa1c9-bb86-48f2-8585-10c28e0a4a89-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

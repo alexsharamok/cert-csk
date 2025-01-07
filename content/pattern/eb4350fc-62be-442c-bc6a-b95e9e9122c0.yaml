@@ -1,0 +1,95 @@
+composition:
+  _name: Page Pattern
+  _id: eb4350fc-62be-442c-bc6a-b95e9e9122c0
+  type: page
+  parameters: {}
+  slots:
+    pageFooter:
+      - _id: d1763af0-d860-45c0-a9ba-805060cdf589
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 2ff34f63-b476-49da-906b-91931a7efd25
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: a91755d0-e368-4f59-8557-8a1d031337a5
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/vXg6ri5DTnGfOdo4dLkTIw-rectangle.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
+                  size:
+                    value: 49092
+                    type: number
+                  title:
+                    type: text
+                    value: rectangle.webp
+                  width:
+                    value: 1600
+                    type: number
+                  height:
+                    value: 689
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            value: Page Title
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: tp-color-palette-parameter
+            value: primary-content
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: Some page description
+          eyebrowText:
+            type: text
+            value: eyebrow text
+          paddingBottom:
+            type: select
+            value: None
+          containerVariant:
+            type: select
+            value: fluidContent
+      - _id: 3b8f70ad-04f5-49b6-ae2b-c531115d77de
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+  _overridability:
+    hideLockedParameters: true
+created: '2024-12-06T15:15:39.582563+00:00'
+modified: '2024-12-06T15:15:39.582563+00:00'
+pattern: true

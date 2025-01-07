@@ -1,0 +1,117 @@
+composition:
+  _name: Blog Page Pattern
+  _id: 17c75df4-5c24-42e7-877d-ec16ea0864fc
+  type: blogPage
+  parameters: {}
+  slots:
+    pageFooter:
+      - _id: b99c552f-ccc8-4a45-a221-44cf5e564c36
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: dbd61886-a7e8-464c-9612-232e26a020cb
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: 520e18b5-608b-4c2a-bc36-05eca1734797
+        type: hero
+        variant: backgroundImage
+        parameters:
+          image:
+            type: asset
+            value:
+              - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+                type: image
+                fields:
+                  id:
+                    type: text
+                    value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
+                  url:
+                    value: >-
+                      https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/vXg6ri5DTnGfOdo4dLkTIw-rectangle.webp
+                    type: text
+                  file:
+                    type: file
+                    value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
+                  size:
+                    value: 49092
+                    type: number
+                  title:
+                    type: text
+                    value: rectangle.webp
+                  width:
+                    value: 1600
+                    type: number
+                  height:
+                    value: 689
+                    type: number
+                  mediaType:
+                    value: image/webp
+                    type: text
+                _source: uniform-assets
+          title:
+            type: text
+            value: Page Title
+          objectFit:
+            type: select
+            value: cover
+          textColor:
+            type: tp-color-palette-parameter
+            value: primary-content
+          paddingTop:
+            type: select
+            value: None
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+          description:
+            type: text
+            value: Some page description
+          eyebrowText:
+            type: text
+            value: eyebrow text
+          paddingBottom:
+            type: select
+            value: None
+          containerVariant:
+            type: select
+            value: fluidContent
+      - _id: bda33706-78ca-42ca-b50e-1714566884ec
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+      - _id: 79aaa15e-b7ec-4cde-85c1-b4f71b119bb6
+        type: hero
+        variant: imageRight
+        parameters:
+          title:
+            type: text
+            value: Blog title
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h2
+          description:
+            type: text
+            value: Some blog post content
+      - _id: d5b95ef4-d77e-4ff6-9ae6-d81fbded6ef2
+        type: content
+        parameters:
+          text:
+            type: text
+            value: Blog Content
+          titleStyle:
+            type: tp-title-style-parameter
+            value: h1
+  _overridability:
+    hideLockedParameters: true
+created: '2024-12-05T15:55:09.031784+00:00'
+modified: '2024-12-05T15:55:09.031784+00:00'
+pattern: true

@@ -2,6 +2,7 @@ import type { CLIConfiguration } from '@uniformdev/cli';
 
 const config: CLIConfiguration = {
   serialization: {
+    mode: 'createOrUpdate',
     entitiesConfig: {
       aggregate: {},
       asset: {},

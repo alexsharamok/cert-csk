@@ -1,0 +1,82 @@
+id: article
+name: Article
+created: '2024-11-29T18:31:58.854293+00:00'
+updated: '2025-01-07T13:21:09.676762+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: title
+    name: Title
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: description
+    name: Description
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: thumbnail
+    name: Thumbnail
+    type: asset
+    typeConfig: {}
+    localizable: true
+  - id: content
+    name: Content
+    type: richText
+    typeConfig:
+      elements:
+        builtIn:
+          - h1
+          - h2
+          - h3
+          - h4
+          - h5
+          - h6
+          - unorderedList
+          - orderedList
+          - link
+          - quote
+          - code
+          - table
+          - asset
+          - variable
+      required: false
+      formatting:
+        builtIn:
+          - bold
+          - italic
+          - underline
+          - strikethrough
+          - code
+          - superscript
+          - subscript
+    localizable: true
+  - id: tag
+    name: Tag
+    type: contentReference
+    typeConfig:
+      isMulti: true
+      allowedContentTypes:
+        - tag
+  - id: source
+    name: Source
+    type: contentReference
+    typeConfig:
+      required: true
+      allowedContentTypes:
+        - contentSource
+  - id: externalContent
+    name: External Content
+    type: json
+    typeConfig: {}
+  - id: author
+    name: Author
+    type: text
+    typeConfig: null
+    localizable: true
+entryName: title
+description: ''
+icon: card
+type: contentType
+permissions: []

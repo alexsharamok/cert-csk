@@ -1,0 +1,28 @@
+id: filterBy
+name: Filter By
+created: '2024-11-29T17:00:39.632349+00:00'
+updated: '2024-12-13T19:31:20.517861+00:00'
+slugSettings:
+  required: 'no'
+useTeamPermissions: true
+fields:
+  - id: fieldName
+    name: Field Name
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: labelField
+    name: Label Field
+    type: text
+    typeConfig: null
+    localizable: true
+  - id: exclude
+    name: Exclude
+    type: text
+    typeConfig: null
+    localizable: true
+entryName: fieldName
+description: ''
+icon: read
+type: block
+permissions: []

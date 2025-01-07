@@ -1,0 +1,34 @@
+created: '2024-11-29T18:52:39.547906+00:00'
+modified: '2024-12-02T08:20:52.977085+00:00'
+pattern: false
+entry:
+  _id: db6b187a-04bd-49a0-8181-2ac81edad05b
+  _name: Exploring the intersection of technology and art
+  _slug: exploring-the-intersection-of-technology-and-art
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/gidU2xh7u9rjS8vj5nikT/a0fd72eaf2728544eeb2ef0f7deae9e0/art1.webp
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: exploring-the-intersection-of-technology-and-art
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-db6b187a-04bd-49a0-8181-2ac81edad05b-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: >-
+          42b1b01a-8732-469e-a15d-d3c483c8ade5,958d78be-6f52-4b4c-84cc-97d96f090da5
+  _locales:
+    - en-US
+  _overrides:
+    db6b187a-04bd-49a0-8181-2ac81edad05b:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-db6b187a-04bd-49a0-8181-2ac81edad05b-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

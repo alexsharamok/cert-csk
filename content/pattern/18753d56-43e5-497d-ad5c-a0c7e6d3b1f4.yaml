@@ -1,0 +1,36 @@
+composition:
+  _name: Blog Filter Box
+  _id: 18753d56-43e5-497d-ad5c-a0c7e6d3b1f4
+  type: entryFilterBox
+  parameters:
+    title:
+      type: text
+      value: Filters
+    filterBy:
+      type: $block
+      value:
+        - _id: d651d185-3767-4477-8350-e903f8655e21
+          type: filterBy
+          fields:
+            fieldName:
+              type: text
+              value: author
+        - _id: d65baf93-d61f-4ba1-946a-ea9fd76f6b4b
+          type: filterBy
+          fields:
+            fieldName:
+              type: text
+              value: tag
+            labelField:
+              type: text
+              value: title
+  _overridability:
+    parameters:
+      $viz: 'yes'
+      title: 'yes'
+    hideLockedParameters: true
+  _locales:
+    - en-US
+created: '2024-11-29T17:16:57.843824+00:00'
+modified: '2024-12-13T19:33:09.978652+00:00'
+pattern: true

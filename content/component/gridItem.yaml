@@ -163,10 +163,15 @@ slots:
       - box
       - navigationSection
       - text
+      - articleItem
+      - blogItem
+      - entryFilterBox
+      - searchEntryResultList
+      - pagination
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
 titleParameter: title
 canBeComposition: false
 created: '2024-11-19T16:34:33.776113+00:00'
-updated: '2024-11-19T16:34:33.776113+00:00'
+updated: '2024-11-29T18:20:30.390093+00:00'

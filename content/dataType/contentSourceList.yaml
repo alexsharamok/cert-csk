@@ -1,0 +1,29 @@
+id: contentSourceList
+displayName: Content Source List
+ttl: 30
+body: ''
+path: /query
+custom:
+  allowedContentTypes:
+    - contentSource
+method: GET
+purgeKey: b302f2a4-71a6-4a5d-ba85-11fab1905df0
+archetype: queryEntries
+variables:
+  limit:
+    type: text
+    default: '20'
+  offset:
+    type: text
+    default: '0'
+  filters:
+    type: text
+    default: '{}'
+  orderBy:
+    type: text
+    default: ''
+  contentTypes:
+    type: text
+    default: ''
+dataSourceId: uniformContent
+allowedOnComponents: []

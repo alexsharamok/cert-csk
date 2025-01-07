@@ -177,6 +177,7 @@ slots:
       - box
       - advancedContainer
       - videoPlayer
+      - uniformEntrySearchEngine
     allowAllComponents: false
     inheritAllowedComponents: false
     patternsInAllowedComponents: false
@@ -277,4 +278,4 @@ defaults:
 titleParameter: pageTitle
 canBeComposition: true
 created: '2024-11-19T16:34:34.753369+00:00'
-updated: '2024-11-20T16:59:26.67662+00:00'
+updated: '2024-11-29T17:45:08.706265+00:00'

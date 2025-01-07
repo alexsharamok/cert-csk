@@ -1,0 +1,10 @@
+id: 689f74df-e79d-41bd-92c0-e0aa01a362eb
+name: Blog post
+order: 500
+path: /search-page/:article-slug
+type: composition
+pathSegment: ':article-slug'
+data:
+  previewValue: ''
+compositionId: ad8fb352-6016-480b-a4b1-880ca30564d1
+projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431

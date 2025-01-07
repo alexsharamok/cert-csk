@@ -1,0 +1,33 @@
+created: '2024-11-29T18:49:54.344589+00:00'
+modified: '2024-12-02T08:19:38.11287+00:00'
+pattern: false
+entry:
+  _id: 4ccd219c-67c2-4c67-b81e-c69dfa74d17c
+  _name: 'The rise of robots: how advanced technology is changing'
+  _slug: the-rise-of-robots-how-advanced-technology-is-changing
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/6KL2h91Rvd9ZBGOUUhDNE9/23a21900671d6caad1c8ffe97b96c4db/robots1.webp
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: the-rise-of-robots-how-advanced-technology-is-changing
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-4ccd219c-67c2-4c67-b81e-c69dfa74d17c-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 31ad144e-86d1-45f9-9779-85ef90ad850e
+  _locales:
+    - en-US
+  _overrides:
+    4ccd219c-67c2-4c67-b81e-c69dfa74d17c:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-4ccd219c-67c2-4c67-b81e-c69dfa74d17c-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

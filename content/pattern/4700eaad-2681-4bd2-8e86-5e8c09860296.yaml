@@ -71,7 +71,9 @@ composition:
       secondaryButtonStyle: 'yes'
       primaryButtonAnimationType: 'yes'
       secondaryButtonAnimationType: 'yes'
-    hideLockedParameters: true
+    hideLockedParameters: false
+  _locales:
+    - en-US
 created: '2024-11-28T19:06:07.376746+00:00'
-modified: '2024-11-28T19:10:03.170098+00:00'
+modified: '2024-12-05T14:37:34.677107+00:00'
 pattern: true

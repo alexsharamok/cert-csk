@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: a9b2f48b-316d-41d1-9dad-dbe209b8d4f1
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: blog-entry.webp
+    file:
+      type: file
+      value: d4d89790-5bfe-4087-ab11-d06088be4f45
+    mediaType:
+      value: image/webp
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/PEW2PV53RAuo1LLD-JuOuA-blog-entry.webp
+      type: text
+    size:
+      value: 174262
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-12-02T08:11:23.217115+00:00'
+modified: '2024-12-02T08:11:23.217115+00:00'

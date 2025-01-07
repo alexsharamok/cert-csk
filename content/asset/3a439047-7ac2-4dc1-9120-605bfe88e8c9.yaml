@@ -1,0 +1,30 @@
+asset:
+  type: image
+  _id: 3a439047-7ac2-4dc1-9120-605bfe88e8c9
+  _name: ''
+  fields:
+    title:
+      type: text
+      value: tech-related-blog-entry.webp
+    file:
+      type: file
+      value: 00317fec-d47e-4f1b-b15a-8b29c988fd72
+    mediaType:
+      value: image/webp
+      type: text
+    url:
+      value: >-
+        https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/Em24QRbvQiSa3Op-zfHUTw-tech-related-blog-entry.webp
+      type: text
+    size:
+      value: 323252
+      type: number
+    width:
+      value: 1024
+      type: number
+    height:
+      value: 1024
+      type: number
+    custom: {}
+created: '2024-12-02T08:16:09.167025+00:00'
+modified: '2024-12-02T08:16:09.167025+00:00'

@@ -1,0 +1,34 @@
+created: '2024-11-29T18:51:36.264367+00:00'
+modified: '2024-12-02T08:20:25.719708+00:00'
+pattern: false
+entry:
+  _id: f7502801-9804-4fcb-9fcf-30f2fc319666
+  _name: 'Quantum computing: how it works and what it means for the'
+  _slug: quantum-computing-how-it-works-and-what-it-means-for-the
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/617p75z6jeeCQxn1nrWMRp/46589310c2dfe6dd672a932c38c30279/quantum1.webp
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: quantum-computing-how-it-works-and-what-it-means-for-the-future
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-f7502801-9804-4fcb-9fcf-30f2fc319666-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: >-
+          42b1b01a-8732-469e-a15d-d3c483c8ade5,958d78be-6f52-4b4c-84cc-97d96f090da5
+  _locales:
+    - en-US
+  _overrides:
+    f7502801-9804-4fcb-9fcf-30f2fc319666:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-f7502801-9804-4fcb-9fcf-30f2fc319666-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

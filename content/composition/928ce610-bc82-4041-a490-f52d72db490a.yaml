@@ -1,0 +1,178 @@
+composition:
+  _name: Edge test
+  _id: 928ce610-bc82-4041-a490-f52d72db490a
+  _slug: edge-test
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Edge personalization testing
+  slots:
+    pageFooter:
+      - _id: b7163a5a-bf70-485c-9666-82a98f2f8269
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: 902e317c-46c8-4b14-99cb-d38a817baed6
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: bdd896a0-9488-4112-9194-c2edbdb1b4a6
+        type: $personalization
+        slots:
+          pz:
+            - _id: f01ddaf7-c084-48d0-95f2-bf423e121f5a
+              type: hero
+              variant: backgroundImage
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/vXg6ri5DTnGfOdo4dLkTIw-rectangle.webp
+                          type: text
+                        file:
+                          type: file
+                          value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
+                        size:
+                          value: 49092
+                          type: number
+                        title:
+                          type: text
+                          value: rectangle.webp
+                        width:
+                          value: 1600
+                          type: number
+                        height:
+                          value: 689
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Dnipro hero
+                $pzCrit:
+                  type: $pzCrit
+                  value:
+                    crit:
+                      - l: dniproVisitor
+                        r: '30'
+                        op: '>'
+                    name: 'Hero: Dnipro hero'
+                objectFit:
+                  type: select
+                  value: cover
+                textColor:
+                  type: tp-color-palette-parameter
+                  value: primary-content
+                paddingTop:
+                  type: select
+                  value: None
+                titleStyle:
+                  type: tp-title-style-parameter
+                  value: h1
+                description:
+                  type: text
+                  value: Some page description
+                eyebrowText:
+                  type: text
+                  value: eyebrow text
+                paddingBottom:
+                  type: select
+                  value: None
+                containerVariant:
+                  type: select
+                  value: fluidContent
+            - _id: 74e44b63-4fe3-4387-aea2-ec0dd2b1951e
+              type: hero
+              variant: backgroundImage
+              parameters:
+                image:
+                  type: asset
+                  value:
+                    - _id: 749a0108-de12-493f-a28d-f9a77e854d30
+                      type: image
+                      fields:
+                        id:
+                          type: text
+                          value: 3c1767ca-1851-4f4f-b8dc-4269d5ea6328
+                        url:
+                          value: >-
+                            https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/vXg6ri5DTnGfOdo4dLkTIw-rectangle.webp
+                          type: text
+                        file:
+                          type: file
+                          value: 417f72e5-d0bc-47c8-8633-eb537728e2ec
+                        size:
+                          value: 49092
+                          type: number
+                        title:
+                          type: text
+                          value: rectangle.webp
+                        width:
+                          value: 1600
+                          type: number
+                        height:
+                          value: 689
+                          type: number
+                        mediaType:
+                          value: image/webp
+                          type: text
+                      _source: uniform-assets
+                title:
+                  type: text
+                  value: Default hero
+                objectFit:
+                  type: select
+                  value: cover
+                textColor:
+                  type: tp-color-palette-parameter
+                  value: primary-content
+                paddingTop:
+                  type: select
+                  value: None
+                titleStyle:
+                  type: tp-title-style-parameter
+                  value: h1
+                description:
+                  type: text
+                  value: Some page description
+                eyebrowText:
+                  type: text
+                  value: eyebrow text
+                paddingBottom:
+                  type: select
+                  value: None
+                containerVariant:
+                  type: select
+                  value: fluidContent
+        parameters:
+          trackingEventName:
+            type: text
+            value: Dnipro
+      - _id: 0a84b8ea-a064-4ebe-9031-1e061df29dea
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+  _locales:
+    - en-US
+created: '2024-12-20T12:57:01.875871+00:00'
+modified: '2024-12-20T12:59:36.757141+00:00'
+pattern: false

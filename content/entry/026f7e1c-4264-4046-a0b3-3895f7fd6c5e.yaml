@@ -1,0 +1,34 @@
+created: '2024-11-29T18:54:03.366107+00:00'
+modified: '2024-12-02T08:21:40.465795+00:00'
+pattern: false
+entry:
+  _id: 026f7e1c-4264-4046-a0b3-3895f7fd6c5e
+  _name: 'Humanoids take the stage: the growing role of human-like...'
+  _slug: humanoids-take-the-stage-the-growing-role-of-human-like
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/2kkoqnUUjSejsynR4j0TUG/fb285e4cf38140be01290ba3aa73784b/humanoids1.webp
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: >-
+          humanoids-take-the-stage-the-growing-role-of-human-like-robots-in-society
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-026f7e1c-4264-4046-a0b3-3895f7fd6c5e-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 31ad144e-86d1-45f9-9779-85ef90ad850e
+  _locales:
+    - en-US
+  _overrides:
+    026f7e1c-4264-4046-a0b3-3895f7fd6c5e:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-026f7e1c-4264-4046-a0b3-3895f7fd6c5e-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

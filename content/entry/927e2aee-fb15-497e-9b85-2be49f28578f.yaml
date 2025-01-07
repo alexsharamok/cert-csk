@@ -1,0 +1,33 @@
+created: '2024-11-29T18:50:47.546179+00:00'
+modified: '2024-12-02T08:20:04.235674+00:00'
+pattern: false
+entry:
+  _id: 927e2aee-fb15-497e-9b85-2be49f28578f
+  _name: Creating sustainable cities and the role of green urbanism
+  _slug: creating-sustainable-cities-and-the-role-of-green-urbanism
+  _thumbnail: >-
+    //images.ctfassets.net/aqiz45gsfmcx/2bcP5YjjO6orgVf2ClwVna/8b415384167c25ce443914ca474b274d/cities_1.webp
+  type: article
+  fields: {}
+  _dataResources:
+    Blog by Slug Content:
+      type: blogBySlug
+      variables:
+        slug: creating-sustainable-cities-and-the-role-of-green-urbanism
+        locale: ''
+        slugField: fields.slug[in]
+        contentType: pageBlogPost
+    ref-927e2aee-fb15-497e-9b85-2be49f28578f-tag:
+      type: uniformContentInternalReference
+      variables:
+        locale: ${locale}
+        entryIds: 958d78be-6f52-4b4c-84cc-97d96f090da5
+  _locales:
+    - en-US
+  _overrides:
+    927e2aee-fb15-497e-9b85-2be49f28578f:
+      parameters:
+        tag:
+          type: contentReference
+          value: ${#jptr:/ref-927e2aee-fb15-497e-9b85-2be49f28578f-tag/entries}
+  _pattern: b1c46b4b-84d6-491c-bbf2-bdfcb995753a

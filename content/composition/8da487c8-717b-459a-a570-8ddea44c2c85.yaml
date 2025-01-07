@@ -178,6 +178,9 @@ composition:
           gapY:
             type: tp-slider-parameter
             value: medium
+          title:
+            type: text
+            value: Blog list
           columnsCount:
             type: tp-slider-parameter
             value: '2'
@@ -198,5 +201,5 @@ composition:
         advancedFilters: '[]'
         contentTypeQuery: content_type=pageBlogPost
 created: '2024-11-28T19:40:14.566012+00:00'
-modified: '2024-11-29T10:25:44.673293+00:00'
+modified: '2024-11-29T17:40:50.865942+00:00'
 pattern: false

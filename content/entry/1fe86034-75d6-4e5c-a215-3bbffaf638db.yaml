@@ -1,0 +1,35 @@
+created: '2024-11-29T18:40:01.562399+00:00'
+modified: '2024-11-29T18:43:31.331931+00:00'
+pattern: false
+entry:
+  _id: 1fe86034-75d6-4e5c-a215-3bbffaf638db
+  _name: Contentful
+  _slug: contentful
+  _thumbnail: >-
+    https://img.uniform.global/p/75OBgngeTP6dTXBnaNY7Fw/vibNEHdLTUKTfRYS3hx1MQ-Contentful_Logo_2.5_Dark.svg
+  type: contentSource
+  fields:
+    logo:
+      type: asset
+      value:
+        - _id: 6cbbebe4-2c58-4319-bca5-80512c708cd1
+          type: image
+          fields:
+            url:
+              type: text
+              value: >-
+                https://img.uniform.global/p/75OBgngeTP6dTXBnaNY7Fw/vibNEHdLTUKTfRYS3hx1MQ-Contentful_Logo_2.5_Dark.svg
+          _source: custom-url
+    title:
+      type: text
+      value: Contentful
+    value:
+      type: text
+      value: contentful
+    description:
+      type: text
+      value: >-
+        A flexible and scalable headless CMS that allows you to manage and
+        deliver content across various platforms. Contentful provides powerful
+        tools for creating, editing, and organizing content in a way that fits
+        your specific needs.

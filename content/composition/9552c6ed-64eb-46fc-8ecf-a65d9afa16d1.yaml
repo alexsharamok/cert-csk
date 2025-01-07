@@ -1,0 +1,157 @@
+composition:
+  _name: Search Page
+  _id: 9552c6ed-64eb-46fc-8ecf-a65d9afa16d1
+  _slug: search-page
+  type: page
+  parameters:
+    pageTitle:
+      type: text
+      value: Search Page
+  slots:
+    pageFooter:
+      - _id: edb14d0f-557c-42e9-8a51-cce2981c6a92
+        type: footer
+        _pattern: 319639e9-4bac-4fb3-8f0b-19088c969fcb
+    pageHeader:
+      - _id: eb8f606b-118c-4abe-94bf-40d973d2398f
+        type: header
+        _pattern: e46c8336-acfd-43e8-ac59-8be8f4c33b7d
+    pageContent:
+      - _id: eb90de04-8e63-4dd4-9205-6ee4b7ff82c9
+        type: breadcrumbs
+        parameters:
+          separator:
+            type: select
+            value: chevron
+          colorStyle:
+            type: tp-color-style-parameter
+            value: primary
+          displayRootNode:
+            type: checkbox
+            value: true
+      - _id: d94065e0-0c4d-4791-b4da-0e38ae99869e
+        type: container
+        slots:
+          container-inner:
+            - _id: 45ab1806-941f-4240-9b02-6558bc710af4
+              type: uniformEntrySearchEngine
+              slots:
+                content:
+                  - _id: f0aa0e19-eb80-4dfc-9009-2af19c1b7a82
+                    type: searchBox
+                  - _id: 33799234-251e-43fe-b507-e58c3e8bc1db
+                    type: grid
+                    slots:
+                      grid-inner:
+                        - _id: 1920e69a-27b2-4f34-892d-f11b29637ec9
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: e1399465-1810-4c5e-ba45-124a37bc3d82
+                                type: entryFilterBox
+                                _pattern: 18753d56-43e5-497d-ad5c-a0c7e6d3b1f4
+                          parameters:
+                            title:
+                              type: text
+                              value: Left Section
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                        - _id: 8bd50725-9d87-4b91-a78b-87b6ec3aa192
+                          type: gridItem
+                          slots:
+                            inner:
+                              - _id: 0e24412d-e79c-454e-b8be-9677e4449c2a
+                                type: searchEntryResultList
+                                slots:
+                                  resultItem:
+                                    - _id: e46c5062-fdf9-4d13-8b91-784df5ac9f63
+                                      type: blogItem
+                                      parameters:
+                                        buttonCopy:
+                                          type: text
+                                          value: Read...
+                                        buttonLink:
+                                          type: link
+                                          value:
+                                            path: /search-page/:article-slug
+                                            type: projectMapNode
+                                            nodeId: 689f74df-e79d-41bd-92c0-e0aa01a362eb
+                                            projectMapId: 40535f31-cdc1-4ac3-bb4d-2a008493b431
+                              - _id: ac26b978-b4c5-4766-a0ba-afd3331ee57d
+                                type: spacer
+                              - _id: 997d8ed3-f672-486c-98ca-e77424ec098e
+                                type: pagination
+                                parameters:
+                                  pageToDisplay:
+                                    type: number
+                                    value: '5'
+                          parameters:
+                            title:
+                              type: text
+                              value: Right Section
+                            rowSpan:
+                              type: tp-slider-parameter
+                              value: '1'
+                            rowStart:
+                              type: tp-slider-parameter
+                              value: None
+                            columnSpan:
+                              type: tp-slider-parameter
+                              value: '3'
+                            columnStart:
+                              type: tp-slider-parameter
+                              value: none
+                    parameters:
+                      gapX:
+                        type: tp-slider-parameter
+                        value: small
+                      gapY:
+                        type: tp-slider-parameter
+                        value: small
+                      title:
+                        type: text
+                        value: Search and Filter
+                      columnsCount:
+                        type: tp-slider-parameter
+                        value: '4'
+              parameters:
+                pageSize:
+                  type: number
+                  value: '5'
+                initialFilters:
+                  type: $block
+                  value:
+                    - _id: 367a8826-5b04-425a-afc6-d2c672845548
+                      type: searchFilter
+                      fields:
+                        key:
+                          type: text
+                          value: type
+                        value:
+                          type: text
+                          value: article
+                        operator:
+                          type: select
+                          value: eq
+                        filterName:
+                          type: text
+                          value: Type
+        parameters:
+          title:
+            type: text
+            value: Blog pages search
+  _locales:
+    - en-US
+created: '2024-11-29T17:43:03.830814+00:00'
+modified: '2024-12-19T10:01:17.535702+00:00'
+pattern: false

@@ -1,0 +1,54 @@
+created: '2024-12-02T08:14:39.086846+00:00'
+modified: '2024-12-13T12:37:44.795194+00:00'
+pattern: false
+entry:
+  _id: 31ad144e-86d1-45f9-9779-85ef90ad850e
+  _name: Tech
+  _slug: tech
+  _thumbnail: >-
+    https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/Em24QRbvQiSa3Op-zfHUTw-tech-related-blog-entry.webp
+  type: tag
+  fields:
+    logo:
+      type: asset
+      locales:
+        en-US:
+          - _id: ae86e531-b445-4747-ae2e-a119a4222933
+            type: image
+            fields:
+              id:
+                type: text
+                value: 3a439047-7ac2-4dc1-9120-605bfe88e8c9
+              url:
+                value: >-
+                  https://img.uniform.global/p/i-wouq0PTxK82Aa4TAbqAA/Em24QRbvQiSa3Op-zfHUTw-tech-related-blog-entry.webp
+                type: text
+              file:
+                type: file
+                value: 00317fec-d47e-4f1b-b15a-8b29c988fd72
+              size:
+                value: 323252
+                type: number
+              title:
+                type: text
+                value: tech-related-blog-entry.webp
+              width:
+                value: 1024
+                type: number
+              height:
+                value: 1024
+                type: number
+              mediaType:
+                value: image/webp
+                type: text
+            _source: uniform-assets
+    title:
+      type: text
+      locales:
+        en-US: Tech
+    description:
+      type: text
+      locales:
+        en-US: Tech information
+  _locales:
+    - en-US
